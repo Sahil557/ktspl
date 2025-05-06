@@ -69,10 +69,44 @@ export default function Home() {
         <CallToAction message="Lets connect and get in touch." buttonText="Get Started" />
       </div>
 
-      <div className="py-10">
+
+
+      <div className="bg-primary-dark">
+
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div className="w-full lg:w-1/2">
+              <Image
+                src="/isolation-mode.png"
+                alt="isolation mode"
+                width={507}
+                height={224}
+              />
+              <p className="text-2xl text-white">Testimonials</p>
+              <p className="font-primary text-white font-bold text-4xl mt-2">
+                Don’t take our word <br />for it <span className="text-secondary">Take theirs</span>
+              </p>
+            </div>
+            <div className="w-full lg:w-1/2">
+              <Card />
+            </div>
+          </div>
+        </div>
+        <Image
+          src="/clip-path.png"
+          alt="clip path"
+          width={860}
+          height={672}
+          className=""
+        />
+      </div>
+
+
+
+      <div className="py-30">
         <SocialMedia />
       </div>
-      <div className="bg-primary-dark py-20">
+      <div className="bg-primary-dark py-30">
         <NeedInfo />
       </div>
     </>

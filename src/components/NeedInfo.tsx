@@ -1,15 +1,15 @@
 export default function NeedInfo() {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <h2 className="mb-4 text-3xl font-bold text-white">Need more info? <span className="text-secondary">Just reach out!</span></h2>
+      <h2 className="mb-4 text-4xl font-bold text-white">Need more info? <span className="text-secondary">Just reach out!</span></h2>
 
-      <form className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-3">
-        <input type="text" placeholder="Name" className="rounded-md bg-primary-ex-soft text-light-blue p-3 outline-none" />
-        <input type="text" placeholder="Phone number" className="rounded-md bg-primary-ex-soft text-light-blue p-3 outline-none" />
-        <input type="email" placeholder="Email" className="rounded-md bg-primary-ex-soft text-light-blue p-3 outline-none" />
+      <form className="my-6 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <input type="text" placeholder="Name" className="rounded-md bg-primary-input text-light-blue p-3 outline-none" />
+        <input type="text" placeholder="Phone number" className="rounded-md bg-primary-input text-light-blue p-3 outline-none" />
+        <input type="email" placeholder="Email" className="rounded-md bg-primary-input text-light-blue p-3 outline-none" />
       </form>
 
-      <textarea placeholder="Your Message..." rows="4" className="w-full rounded-md bg-primary-ex-soft text-light-blue p-3 outline-none"></textarea>
+      <textarea placeholder="Your Message..." rows="4" className="w-full rounded-md bg-primary-input text-light-blue p-3 outline-none"></textarea>
 
       <div className="flex items-center justify-between flex-wrap gap-4">
 
