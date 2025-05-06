@@ -1,36 +1,42 @@
 [
   {
-    "name": "Adidas",
+    "name": "IBM",
+    "alt": "ibm-logo",
     "imageUrl": "/ibm.png",
     "width": 110,
     "height": 59
   },
   {
-    "name": "Nike",
+    "name": "Decathlon",
+    "alt": "decathlon-logo",
     "imageUrl": "/decathlon.png",
     "width": 188,
     "height": 54
   },
   {
-    "name": "Puma",
+    "name": "Great Sports",
+    "alt": "great-sports-logo",
     "imageUrl": "/great-sports.png",
     "width": 120,
     "height": 56
   },
   {
-    "name": "Decathlon",
+    "name": "Police",
+    "alt": "police-logo",
     "imageUrl": "/all-india-police-sports.png",
     "width": 60,
     "height": 60
   },
   {
-    "name": "Under Armour",
+    "name": "School",
+    "alt": "school",
     "imageUrl": "/school.png",
     "width": 80,
     "height": 65
   },
   {
-    "name": "Under Armour",
+    "name": "Case",
+    "alt": "case",
     "imageUrl": "/case.png",
     "width": 116,
     "height": 55

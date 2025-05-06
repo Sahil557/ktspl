@@ -8,7 +8,7 @@ export default function OurPartners() {
         <Image
           key={partner.name}
           src={partner.imageUrl}
-          alt={partner.name}
+          alt={partner.alt}
           width={partner.width}
           height={partner.height}
         />
