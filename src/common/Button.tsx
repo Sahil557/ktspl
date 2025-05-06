@@ -14,17 +14,17 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
   text,
-  color = 'bg-blue-500',
-  textColor = 'text-white',
+  color = 'bg-secondary',
+  textColor = 'text-black',
   size = 'py-2 px-4',
-  textSize = 'text-base',
+  textSize = 'text-xs',
   icon,
   onClick,
 }) => {
   return (
     <button
       onClick={onClick}
-      className={`${color} ${textColor} ${size} ${textSize} rounded-lg flex items-center justify-center space-x-2`}
+      className={`${color} ${textColor} ${size} ${textSize} font-semibold rounded-full flex items-center justify-center space-x-2`}
     >
       {icon && <span>{icon}</span>}
       <span>{text}</span>

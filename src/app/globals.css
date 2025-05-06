@@ -7,10 +7,13 @@
 @theme inline {
   --font-primary: "Inter", sans-serif;
   --color-primary:  #13133F;
+  --color-secondary: #E3AA2F;
+  --color-light-blue: #CCCCFF;
   --color-primary-dark: #1A184B;
   --color-primary-soft: #1C184F;
-  --color-secondary: #E3AA2F;
-  --color-black: #232323
+  --color-black: #232323;
+  --color-primary-ex-soft: #2A2770;
+  --color-primary-ex-dark: #282C62;
 }
 
 
