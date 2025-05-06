@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Adidas",
+    "imageUrl": "/ibm.png",
+    "width": 110,
+    "height": 59
+  },
+  {
+    "name": "Nike",
+    "imageUrl": "/decathlon.png",
+    "width": 188,
+    "height": 54
+  },
+  {
+    "name": "Puma",
+    "imageUrl": "/great-sports.png",
+    "width": 120,
+    "height": 56
+  },
+  {
+    "name": "Decathlon",
+    "imageUrl": "/all-india-police-sports.png",
+    "width": 60,
+    "height": 60
+  },
+  {
+    "name": "Under Armour",
+    "imageUrl": "/school.png",
+    "width": 80,
+    "height": 65
+  },
+  {
+    "name": "Under Armour",
+    "imageUrl": "/case.png",
+    "width": 116,
+    "height": 55
+  }
+]
