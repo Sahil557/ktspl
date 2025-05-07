@@ -1,15 +1,27 @@
 'use client';
 
-import { useState } from "react"
-import Link from "next/link"
+import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Close mobile menu when changing pages
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
+  // Function to determine if a link is active
+  const isActive = (path) => {
+    return pathname === path;
+  };
 
   return (
     <header className="mx-auto max-w-[1216px] w-full py-4 sm:py-6 ">
@@ -20,28 +32,48 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden xl:flex items-center gap-12 ml-auto">
-          <Link href="/" className="text-white hover:text-[#e6b800] transition-colors">
+          <Link 
+            href="/" 
+            className={`transition-colors ${isActive('/') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
+          >
             Home
           </Link>
-          <Link href="/about" className="text-white hover:text-[#e6b800] transition-colors">
+          <Link 
+            href="/about" 
+            className={`transition-colors ${isActive('/about') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
+          >
             About Us
           </Link>
-          <Link href="/projects" className="text-white hover:text-[#e6b800] transition-colors">
+          <Link 
+            href="/projects" 
+            className={`transition-colors ${isActive('/projects') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
+          >
             Key Projects
           </Link>
-          <Link href="/services" className="text-white hover:text-[#e6b800] transition-colors">
+          <Link 
+            href="/services" 
+            className={`transition-colors ${isActive('/services') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
+          >
             Services
           </Link>
-          <Link href="/products" className="text-white hover:text-[#e6b800] transition-colors">
+          <Link 
+            href="/products" 
+            className={`transition-colors ${isActive('/products') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
+          >
             Products
           </Link>
-          <Link href="/testimonials" className="text-white hover:text-[#e6b800] transition-colors">
+          <Link 
+            href="/testimonials" 
+            className={`transition-colors ${isActive('/testimonials') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
+          >
             Testimonials
           </Link>
-          <Link href="/contact" className="text-white hover:text-[#e6b800] transition-colors">
+          <Link 
+            href="/contact" 
+            className={`transition-colors ${isActive('/contact') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
+          >
             Contact Us
           </Link>
-          {/* CTA Button */}
         </nav>
         <div className="block ml-auto xl:ml-8">
           <Link
@@ -68,7 +100,6 @@ export default function Header() {
             )}
           </button>
         </div>
-
       </div>
 
       {/* Mobile Menu */}
@@ -77,49 +108,49 @@ export default function Header() {
           <div className="container mx-auto px-4 py-3 space-y-2">
             <Link
               href="/"
-              className="block py-2 text-white hover:text-[#e6b800] transition-colors"
+              className={`block py-2 transition-colors ${isActive('/') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block py-2 text-white hover:text-[#e6b800] transition-colors"
+              className={`block py-2 transition-colors ${isActive('/about') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               About Us
             </Link>
             <Link
               href="/projects"
-              className="block py-2 text-white hover:text-[#e6b800] transition-colors"
+              className={`block py-2 transition-colors ${isActive('/projects') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Key Projects
             </Link>
             <Link
               href="/services"
-              className="block py-2 text-white hover:text-[#e6b800] transition-colors"
+              className={`block py-2 transition-colors ${isActive('/services') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link
               href="/products"
-              className="block py-2 text-white hover:text-[#e6b800] transition-colors"
+              className={`block py-2 transition-colors ${isActive('/products') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Products
             </Link>
             <Link
               href="/testimonials"
-              className="block py-2 text-white hover:text-[#e6b800] transition-colors"
+              className={`block py-2 transition-colors ${isActive('/testimonials') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Testimonials
             </Link>
             <Link
               href="/contact"
-              className="block py-2 text-white hover:text-[#e6b800] transition-colors"
+              className={`block py-2 transition-colors ${isActive('/contact') ? 'text-[#e6b800]' : 'text-white hover:text-[#e6b800]'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
@@ -128,5 +159,5 @@ export default function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }

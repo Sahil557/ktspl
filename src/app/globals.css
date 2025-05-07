@@ -32,5 +32,8 @@ html {
   scrollbar-width: none;  /* Firefox */
 }
 
+body {
+  background-color: var(--color-primary);
+}
 
 
