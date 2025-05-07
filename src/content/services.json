@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "🔄",
+    "title": "Customized Web & APP Development",
+    "description": "A complete range of Web & App development services that turns your ideas into a new driving force of your business."
+  },
+  {
+    "id": 2,
+    "icon": "🏃",
+    "title": "Games & Sports Management System",
+    "description": "A complete range of Web & App development services that turns your ideas into a new driving force of your business."
+  },
+  {
+    "id": 3,
+    "icon": "🏋️",
+    "title": "Fitness Assessment & Monitoring",
+    "description": "A complete range of Web & App development services that turns your ideas into a new driving force of your business."
+  },
+  {
+    "id": 4,
+    "icon": "👥",
+    "title": "Corporate Training",
+    "description": "A complete range of Web & App development services that turns your ideas into a new driving force of your business."
+  }
+]

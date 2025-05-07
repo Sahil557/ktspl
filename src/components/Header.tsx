@@ -1,78 +1,8 @@
 'use client';
 
-// 'use client';
-// import Link from 'next/link';
-// import Image from 'next/image';
-// import Button from '../common/Button';
-
-// const Header = () => {
-//     const handleSaveClick = () => {
-//         // alert('Save button clicked!');
-//       };
-//   return (
-//     <header className="text-white p-4">
-//       <div className="container mx-auto flex justify-between items-center">
-//       <Link href="/" className="flex items-center space-x-2">
-//           <Image src="/logo.png" alt="Logo" width={142} height={51} />
-//         </Link>
-//         <nav>
-//           <ul className="flex space-x-6">
-//             <li>
-//               <Link href="/" className="hover:text-gray-400">
-//                 Home
-//               </Link>
-//             </li>
-//             <li>
-//               <Link href="/about-us" className="hover:text-gray-400">
-//                 About Us
-//               </Link>
-//             </li>
-//             <li>
-//               <Link href="/key-projects" className="hover:text-gray-400">
-//                 Key Projects
-//               </Link>
-//             </li>
-//             <li>
-//               <Link href="/services" className="hover:text-gray-400">
-//                 Services
-//               </Link>
-//             </li>
-//             <li>
-//               <Link href="/projects" className="hover:text-gray-400">
-//                 Projects
-//               </Link>
-//             </li>
-//             <li>
-//               <Link href="/testimonials" className="hover:text-gray-400">
-//               Testimonials
-//               </Link>
-//             </li>
-//             <li>
-//               <Link href="/contact-us" className="hover:text-gray-400">
-//                 Contact Us
-//               </Link>
-//             </li>
-//             <Button
-//         text="Save"
-//         color="bg-green-500"
-//         textColor="text-white"
-//         size="py-3 px-6"
-//         textSize="text-lg"
-//         onClick={handleSaveClick}  // Pass the handler here
-//       />
-//           </ul>
-//         </nav>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
-
 import { useState } from "react"
 import Link from "next/link"
 import Image from 'next/image';
-import Iconic from "@/common/Iconic";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -121,8 +51,6 @@ export default function Header() {
             Get Started
           </Link>
         </div>
-
-
 
         {/* Mobile Menu Button */}
         <div className="xl:hidden ml-3">
@@ -196,13 +124,6 @@ export default function Header() {
             >
               Contact Us
             </Link>
-            {/* <Link
-              href="/get-started"
-              className="block mt-4 bg-[#e6b800] hover:bg-[#d4a900] text-[#0a0a3c] font-medium px-4 py-2 rounded-md text-center transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Get Started
-            </Link> */}
           </div>
         </div>
       )}

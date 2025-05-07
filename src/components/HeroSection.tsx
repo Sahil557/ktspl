@@ -4,15 +4,9 @@ import Image from 'next/image';
 export default function   HeroSection() {
   return (
     <section className="relative h-[300px] lg:h-[600px] w-full overflow-hidden">
-      {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        {/* <Image src="/mask-group.png" alt="hero-section" className="" width={1400} height={600} /> */}
-
-        {/* Overlay */}
-        {/* <div className="absolute inset-0 bg-[#0a0a3c]/20"></div> */}
       </div>
 
-      {/* Content */}
       <div className="bg-[url('/mask-group.png')] bg-center bg-cover relative z-10 flex h-full flex-col justify-center px-6 md:px-12 lg:px-16">
         <div className="py-4">
           <h1 className="text-2xl font-bold text-secondary md:text-4xl lg:text-5xl">Khelo Tech & Strategy</h1>
@@ -33,7 +27,6 @@ export default function   HeroSection() {
               href="/video"
               className="flex items-center gap-2 bg-primary-ex-dark rounded-full border border-white/30  max-md:text-sm px-6 py-1 md:py-2.5 font-medium text-white transition-colors hover:bg-white/10"
             >
-              {/* <Play size={16} className="fill-white" /> */}
               <span>Video</span>
             </Link>
           </div>
