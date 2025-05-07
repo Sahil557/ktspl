@@ -9,7 +9,7 @@ export default function NeedInfo() {
         <input type="email" placeholder="Email" className="rounded-md bg-primary-input text-light-blue p-3 outline-none" />
       </form>
 
-      <textarea placeholder="Your Message..." rows="4" className="w-full rounded-md bg-primary-input text-light-blue p-3 outline-none"></textarea>
+      <textarea placeholder="Your Message..." className="w-full rounded-md bg-primary-input text-light-blue p-3 outline-none"></textarea>
 
       <div className="flex items-center justify-between flex-wrap gap-4">
 

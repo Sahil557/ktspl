@@ -7,15 +7,15 @@ export default function TestimonialSection() {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const getPrevIndex = useCallback((current) => {
+  const getPrevIndex = useCallback((current: number) => {
     return current === 0 ? testimonials.length - 1 : current - 1;
   }, [testimonials.length]);
 
-  const getNextIndex = useCallback((current) => {
+  const getNextIndex = useCallback((current: number) => {
     return current === testimonials.length - 1 ? 0 : current + 1;
   }, [testimonials.length]);
 
-  const getCardStyle = (index) => {
+  const getCardStyle = (index: number) => {
     if (index === activeIndex) {
       return "z-30 opacity-100 translate-y-0 scale-100";
     } else if (index === getPrevIndex(activeIndex)) {
