@@ -12,9 +12,9 @@ const Footer = () => {
             </Link>
             <p className="text-light-blue">It’s always nice to hear from people for whom we are working day-in and day-out. We would love to hear anything that you have to say, be it a feedback, or a query.</p>
           </div>
-          <div>
-            <h4 className="mb-2 font-bold text-white">Products</h4>
-            <ul className="space-y-1 text-light-blue">
+          <div className="lg:ml-14">
+            <h4 className="mb-2 font-bold text-white text-base">Products</h4>
+            <ul className="space-y-2 text-light-blue">
               <li>Allsport</li>
               <li>E-Excellence</li>
               <li>classNameCloud</li>
@@ -23,9 +23,9 @@ const Footer = () => {
               <li>SportWizz</li>
             </ul>
           </div>
-          <div>
-            <h4 className="mb-2 font-bold text-white">KTSPL</h4>
-            <ul className="space-y-1 text-light-blue">
+          <div className="lg:ml-14">
+            <h4 className="mb-2 font-bold text-white text-base">KTSPL</h4>
+            <ul className="space-y-2 text-light-blue">
               <li>About Us</li>
               <li>Services</li>
               <li>FAQs</li>
