@@ -10,21 +10,19 @@ import CallToAction from '@/common/CallToAction';
 export default function Home() {
   return (
     <>
-      <div className="px-20">
+      <div className="max-w-[1400px] mx-auto space-y-7">
         <HeroSection />
-      </div>
-      <div className="px-20">
         <OurPartners />
       </div>
-      <div className="py-10 max-w-screen-xl mx-auto">
-        <p className="font-primary text-white font-bold text-4xl">A new tech experience,<span className="text-secondary"> in a heartbeat</span></p>
+      <div className="mt-24 py-4 mx-auto max-w-[1216px] w-full px-4">
+        <p className="font-primary text-white font-bold  text-2xl md:text-4xl">A new tech experience,<span className="text-secondary"> in a heartbeat</span></p>
         <NewTechExperience />
       </div>
 
       <div className="bg-primary-dark">
-        <div className="py-20 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-2xl text-white">The App</p>
-          <p className="font-primary text-white font-bold text-4xl mt-2">
+        <div className="py-20 mx-auto max-w-[1216px] w-full px-4 ">
+          <p className="text-lg md:text-2xl text-white">The App</p>
+          <p className="font-primary text-white font-bold  text-2xl md:text-4xl mt-2">
             The only <span className="text-secondary">advantage</span> you need
           </p>
 
@@ -46,9 +44,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-20 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-2xl text-white">Our Services</p>
-        <p className="font-primary text-white font-bold text-4xl mt-2">
+      <div className="py-20 mx-auto max-w-[1216px] w-full px-4 sm:px-6 lg:px-4">
+        <p className="text-lg md:text-2xl text-white">Our Services</p>
+        <p className="font-primary text-white font-bold  text-2xl md:text-4xl mt-2">
           The only <span className="text-secondary">advantage</span> you need
         </p>
 
@@ -73,7 +71,7 @@ export default function Home() {
 
       <div className="bg-primary-dark">
 
-        <div className="px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto max-w-[1216px] w-full px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className="w-full lg:w-1/2">
               <Image
@@ -82,8 +80,8 @@ export default function Home() {
                 width={507}
                 height={224}
               />
-              <p className="text-2xl text-white">Testimonials</p>
-              <p className="font-primary text-white font-bold text-4xl mt-2">
+              <p className="text-lg md:text-2xl text-white">Testimonials</p>
+              <p className="font-primary text-white font-bold  text-2xl md:text-4xl mt-2">
                 Don’t take our word <br />for it <span className="text-secondary">Take theirs</span>
               </p>
             </div>
@@ -103,10 +101,10 @@ export default function Home() {
 
 
 
-      <div className="py-30">
+      <div className=" py-10 md:py-30 mx-auto max-w-[1216px] w-full px-4">
         <SocialMedia />
       </div>
-      <div className="bg-primary-dark py-30">
+      <div className="bg-primary-dark py-10 md:py-30">
         <NeedInfo />
       </div>
     </>

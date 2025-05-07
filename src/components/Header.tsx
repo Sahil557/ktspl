@@ -82,14 +82,14 @@ export default function Header() {
   }
 
   return (
-    <header className="mx-auto max-w-screen-[1183px]">
-      <div className="container py-6 flex items-center gap-40">
+    <header className="mx-auto max-w-[1216px] w-full py-4 sm:py-6 ">
+      <div className="flex items-center justify-between px-4">
         <Link href="/" className="flex items-center">
-            <Image src="/logo.png" alt="Logo" width={142} height={51} />
+            <Image src="/logo.png" alt="Logo" width={142} height={51} className="max-md:w-[80px]" />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-12">
+        <nav className="hidden xl:flex items-center gap-12">
           <Link href="/" className="text-white hover:text-[#e6b800] transition-colors">
             Home
           </Link>
@@ -112,7 +112,8 @@ export default function Header() {
             Contact Us
           </Link>
           {/* CTA Button */}
-        <div className="hidden md:block">
+        </nav>
+        <div className="block ml-auto">
           <Link
             href="/get-started"
             className="bg-[#e6b800] hover:bg-[#d4a900] text-[#0a0a3c] font-medium px-4 py-2 rounded-md transition-colors"
@@ -120,12 +121,11 @@ export default function Header() {
             Get Started
           </Link>
         </div>
-        </nav>
 
         
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="xl:hidden ml-4">
           <button onClick={toggleMenu} className="text-white focus:outline-none" aria-label="Toggle menu">
             {isMenuOpen ? <div>Cross Menu</div> : <div>Mobile Menu</div>}
           </button>
@@ -134,7 +134,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#0a0a3c] border-t border-gray-700">
+        <div className="absolute top-14 md:top-20 w-full z-20 xl:hidden bg-[#0a0a3c] border-t border-gray-700 mt-2">
           <div className="container mx-auto px-4 py-3 space-y-2">
             <Link
               href="/"
@@ -185,13 +185,13 @@ export default function Header() {
             >
               Contact Us
             </Link>
-            <Link
+            {/* <Link
               href="/get-started"
               className="block mt-4 bg-[#e6b800] hover:bg-[#d4a900] text-[#0a0a3c] font-medium px-4 py-2 rounded-md text-center transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Started
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

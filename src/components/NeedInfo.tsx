@@ -1,7 +1,7 @@
 export default function NeedInfo() {
   return (
-    <div className="max-w-screen-xl mx-auto">
-      <h2 className="mb-4 text-4xl font-bold text-white">Need more info? <span className="text-secondary">Just reach out!</span></h2>
+    <div className="max-w-[1216px] w-full px-4 mx-auto ">
+      <h2 className="mb-4 text-2xl md:text-4xl font-bold text-white">Need more info? <span className="text-secondary">Just reach out!</span></h2>
 
       <form className="my-6 grid grid-cols-1 gap-4 md:grid-cols-3">
         <input type="text" placeholder="Name" className="rounded-md bg-primary-input text-light-blue p-3 outline-none" />
